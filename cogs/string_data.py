@@ -398,7 +398,7 @@ class string_data(commands.Cog):
 
         # String เมทธอด swapcase
         elif message.content == "!string swapcase":
-            emBed = discord.Embed(title="string.swapcase", description="สลับข้อความตัวเล็กให้เเป็นตัวใหญ่เเละสลับข้อความตัวใหญ่ให้เป็นตัวเล็ก", color=0x6F9DC3)
+            emBed = discord.Embed(title="string.swapcase", description="สลับข้อความตัวเล็กให้เป็นตัวใหญ่เเละสลับข้อความตัวใหญ่ให้เป็นตัวเล็ก", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Apple bANANA"\nx = txt.swapcase()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="aPPLE Bnana")
             emBed.add_field(name="ลองใช้ swapcase", value='โดยการพิม !swapcase ข้อความที่ต้องการ', inline=False)
