@@ -371,7 +371,7 @@ class string_data(commands.Cog):
         #     emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='', inline=False)
         #     emBed.add_field(name="ตัวอย่างโค้ด", value='txt = ""\nx = txt.()\nprint(x)')
         #     emBed.add_field(name="ผลลัพธ์", value="")
-        #     emBed.add_field(name="ลองใช้ rsplit", value='โดยการพิม !rsplit ข้อความที่มีช่องว่างด้านซ้าย', inline=False)
+        #     emBed.add_field(name="ลองใช้ rsplit", value='โดยการพิม !rsplit ข้อความที่มีช่องว่างด้านขวา', inline=False)
         #     await message.channel.send(embed=emBed)
         
         # String เมทธอด strip
