@@ -254,7 +254,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ center", value='โดยการพิม !find คำที่จะหา, ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ find", value='โดยการพิม !find คำที่จะหา, ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด index
