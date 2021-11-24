@@ -3,7 +3,6 @@ import os
 from discord.ext import commands
 from webserver import keep_alive
 
-
 bot = commands.Bot(command_prefix="!")
 
 @bot.event
