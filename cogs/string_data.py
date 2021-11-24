@@ -265,7 +265,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ center", value='โดยการพิม !index ตำเเหน่งที่จะให้เริ่มหา, ตำเเหน่งที่จะให้หยุดหา, ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ index", value='โดยการพิม !index ตำเเหน่งที่จะให้เริ่มหา, ตำเเหน่งที่จะให้หยุดหา, ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isalnum
@@ -289,7 +289,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isnumeric", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวเลขทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "1234345"\nx = txt.isnumeric()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isalpha", value='โดยการพิม !isnumeric ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ isnumeric", value='โดยการพิม !isnumeric ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isupper
@@ -297,7 +297,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isupper", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวเลขใหญ่ทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "CENTER"\nx = txt.isupper()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isalpha", value='โดยการพิม !isupper ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ isupper", value='โดยการพิม !isupper ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด ljust
