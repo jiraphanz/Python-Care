@@ -1,6 +1,8 @@
 import discord
 import os
 from discord.ext import commands
+from webserver import keep_alive
+
 
 bot = commands.Bot(command_prefix="!")
 
@@ -29,6 +31,7 @@ if __name__ == "__main__":
         bot.load_extension(extension)
 
 
+keep_alive()
 
 TOKEN = os.environ.get("DISCORD_BOT_SECRET")
 
