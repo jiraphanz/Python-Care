@@ -8,7 +8,7 @@ class lecture_replay(commands.Cog):
 
     # ลองใช้ islower
     @commands.command()
-    async def lecture(ctx):
+    async def lecture(self, ctx):
         emBed = discord.Embed(title="รวมคลิป Lecture วิชา PSIT 2021", description="[PSIT2021 Week 01: Introduction](https://www.youtube.com/watch?v=l6Ui5svn-YU)\n"
         "[PSIT2021 Week 02: Conditionals](https://www.youtube.com/watch?v=KT_g3BiUMXc)\n"
         "[PSIT2021 Week 03: Problem Solving Framework](https://youtu.be/vzELf1LROws)\n"
