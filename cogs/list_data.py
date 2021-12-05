@@ -34,7 +34,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.append", description="ทำหน้าที่เพิ่มสมาชิกเข้าไปในตำเเหน่งสุดท้ายของ List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits = ["apple", "banana", "cherry"]\nx = fruits.append("orange")')
             emBed.add_field(name="ผลลัพธ์", value='["apple", "banana", "cherry", "orange"]')
-            emBed.add_field(name="ลองใช้ append", value='โดยการพิม do append (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ append", value='โดยการ !lappend (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด clear
@@ -42,7 +42,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.clear", description="ทำหน้าที่ลบสมาชิกทั้งหมดใน List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits = ["apple", "banana", "cherry"]\nx = fruits.clear()')
             emBed.add_field(name="ผลลัพธ์", value="[]")
-            emBed.add_field(name="ลองใช้ clear", value='โดยการพิม do clear (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ clear", value='โดยการพิม !lclear(ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด copy
@@ -50,7 +50,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.copy", description="ทำหน้าที่คืนค่าทั้งหมดใน List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits = ["apple", "banana", "cherry"]\nx = fruits.copy()')
             emBed.add_field(name="ผลลัพธ์", value="[]")
-            emBed.add_field(name="ลองใช้ copy", value='โดยการพิม do copy (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ copy", value='โดยการพิม !lcopy (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด count
@@ -58,7 +58,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.count", description="ใช้ตรวจสอบว่ามีคำที่ปรากฏอยู่ในสตริงต้นทางกี่ครั้ง", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits = ["apple", "banana", "cherry"]\nx = fruits.count("cherry")')
             emBed.add_field(name="ผลลัพธ์", value="1")
-            emBed.add_field(name="ลองใช้ ", value='โดยการพิม do count (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ ", value='โดยการพิม !lcount (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด extend
@@ -66,7 +66,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.extend", description="ใช้เพิ่มข้อมูลจาก iterable มาต่อ List ไว้ข้างหลังอีกที", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value="fruits = ['apple', 'banana', 'cherry']\ncars = ['Ford', 'BMW', 'Volvo']\nx = fruits.extend(cars)")
             emBed.add_field(name="ผลลัพธ์", value='["apple", "banana", "cherry", "Ford", "BMW", "Volvo"]')
-            emBed.add_field(name="ลองใช้ extend", value='โดยการพิม do extend', inline=False)
+            emBed.add_field(name="ลองใช้ extend", value='โดยการพิม !lextend', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด index
@@ -74,7 +74,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.index", description="ทำหน้าที่ระบุตำแหน่งของข้อมูลแต่ละตัวที่อยู่ใน List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.index("cherry")')
             emBed.add_field(name="ผลลัพธ์", value=2)
-            emBed.add_field(name="ลองใช้ index", value='โดยการพิม do index', inline=False)
+            emBed.add_field(name="ลองใช้ index", value='โดยการพิม !lindex', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด pop
@@ -82,7 +82,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.pop", description="Method ที่ลบข้อมูลณ ตำแหน่งที่ระบุ", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.pop(1)')
             emBed.add_field(name="ผลลัพธ์", value=["apple", "cherry"])
-            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม do pop (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !lpop (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด remove
@@ -90,7 +90,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.remove", description="Method ที่ลบข้อมูลที่ระบุ", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.remove("banana")')
             emBed.add_field(name="ผลลัพธ์", value=["apple", "cherry"])
-            emBed.add_field(name="ลองใช้ remove", value='โดยการพิม do remove (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ remove", value='โดยการพิม !lremove (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด reverse
@@ -98,7 +98,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.reverse", description="Method ทีย้อนกลับหรือสลับข้อมูลทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.reverse()')
             emBed.add_field(name="ผลลัพธ์", value=["cherry", "banana", "apple"])
-            emBed.add_field(name="ลองใช้ reverse", value='โดยการพิม do reverse (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ reverse", value='โดยการพิม !lreverse (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด sort
@@ -106,7 +106,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.sort", description="Method ทีใช้เรียงตัวอักษรหรือตัวเลขจากน้อยไปมาก เเละยังสามารถใช้ร่วมกับ reverse ได้ด้วย", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='cars = ["Ford", "BMW", "Volvo"]\nx = cars.sort()')
             emBed.add_field(name="ผลลัพธ์", value=["BMW", "Ford", "Volvo"])
-            emBed.add_field(name="ลองใช้ sort", value='โดยการพิม do sort (ข้อความที่ต้องการ)', inline=False)
+            emBed.add_field(name="ลองใช้ sort", value='โดยการพิม !lsort (ข้อความที่ต้องการ)', inline=False)
             await message.channel.send(embed=emBed)
             
 
