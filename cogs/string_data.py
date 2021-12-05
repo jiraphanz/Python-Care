@@ -352,16 +352,16 @@ class string_data(commands.Cog):
             emBed.add_field(name="ลองใช้ rfind", value='โดยการพิม !rfind คำที่ต้องการหา ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
-        # String เมทธอด rjust
-        elif message.content == "!string rjust":
-            emBed = discord.Embed(title="string.rjust", description="Return ค่าออกมาในรูปเเบบที่ข้อความชิดขวาเเล้วช่องว่างอยู่ซ้าย", color=0x6F9DC3)
-            emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20)\nprint(x)')
-            emBed.add_field(name="ผลลัพธ์", value="              banana")
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพิ่มอีกตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
-            emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20, "O")\nprint(x)')
-            emBed.add_field(name="ผลลัพธ์", value="OOOOOOOOOOOOOObanana")
-            # emBed.add_field(name="ลองใช้ rjust", value='โดยการพิม !rjust ข้อความที่ต้องการให้เเทนที่ช่องว่าง', inline=False)
-            await message.channel.send(embed=emBed)
+        # # String เมทธอด rjust
+        # elif message.content == "!string rjust":
+        #     emBed = discord.Embed(title="string.rjust", description="Return ค่าออกมาในรูปเเบบที่ข้อความชิดขวาเเล้วช่องว่างอยู่ซ้าย", color=0x6F9DC3)
+        #     emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20)\nprint(x)')
+        #     emBed.add_field(name="ผลลัพธ์", value="              banana")
+        #     emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพิ่มอีกตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
+        #     emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20, "O")\nprint(x)')
+        #     emBed.add_field(name="ผลลัพธ์", value="OOOOOOOOOOOOOObanana")
+        #     # emBed.add_field(name="ลองใช้ rjust", value='โดยการพิม !rjust ข้อความที่ต้องการให้เเทนที่ช่องว่าง', inline=False)
+        #     await message.channel.send(embed=emBed)
         
         # # String เมทธอด rsplit
         # elif message.content == "!string rsplit":
