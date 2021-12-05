@@ -9,7 +9,7 @@ class lecture_replay(commands.Cog):
     # ลองใช้ islower
     @commands.command()
     async def lecture(self, ctx):
-        emBed = discord.Embed(title="รวมคลิป Lecture วิชา PSIT 2021", description="คลิปการเรียนการสอนทั้งหมดของวิชา Problem Solving in Information Technology\n[PSIT2021 Week 01: Introduction](https://www.youtube.com/watch?v=l6Ui5svn-YU)\n"
+        emBed = discord.Embed(title="รวมคลิป Lecture วิชา PSIT 2021", description="อาจารย์ผู้สอน รศ.ดร. โชติพัชร์ ภรณวลัย\n\n[PSIT2021 Week 01: Introduction](https://www.youtube.com/watch?v=l6Ui5svn-YU)\n"
         "[PSIT2021 Week 02: Conditionals](https://www.youtube.com/watch?v=KT_g3BiUMXc)\n"
         "[PSIT2021 Week 03: Problem Solving Framework](https://youtu.be/vzELf1LROws)\n"
         "[PSIT2021 Week 04: TurtleWorld](https://www.youtube.com/watch?v=vzELf1LROws)\n"
@@ -22,8 +22,7 @@ class lecture_replay(commands.Cog):
         "[PSIT2021 Week 13: Algorithm Complexity](https://www.youtube.com/watch?v=yrGqliqvx8A)\n"
         "[PSIT2021 Week 14: Recursion, Library, Goodies](https://www.youtube.com/watch?v=pve2p6NCOWo)\n"
         "[PSIT2021 Week 16: Standard Library, Third-Party Library, Greedy Algorithm](https://www.youtube.com/watch?v=VhAi3QGLj34)\n", color=0x6F9DC3)
-        emBed.set_thumbnail(url="https://cdn.discordapp.com/attachments/908412010897743904/917074582798753842/unknown.png")
-        emBed.set_footer(text="อาจารย์ผู้สอน รศ.ดร. โชติพัชร์ ภรณวลัย", icon_url="https://cdn.discordapp.com/attachments/908412010897743904/917075740170809414/unknown.png")
+        emBed.set_thumbnail(url="https://cdn.discordapp.com/attachments/908412010897743904/917076946372943922/Chotipat.jpg")
         emBed.set_footer(text="Created by 2P1B", icon_url="https://cdn.discordapp.com/attachments/895008902712807494/902127838344380446/image-removebg-preview.png")
         await ctx.send(embed=emBed)
     
