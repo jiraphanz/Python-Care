@@ -22,8 +22,7 @@ class lecture_replay(commands.Cog):
         "[PSIT2021 Week 13: Algorithm Complexity](https://www.youtube.com/watch?v=yrGqliqvx8A)\n"
         "[PSIT2021 Week 14: Recursion, Library, Goodies](https://www.youtube.com/watch?v=pve2p6NCOWo)\n"
         "[PSIT2021 Week 16: Standard Library, Third-Party Library, Greedy Algorithm](https://www.youtube.com/watch?v=VhAi3QGLj34)\n", color=0x6F9DC3)
-        emBed.add_field(name="ดูคลิปการเรียนการสอนวิชา PSIT", value='โดยการพิมพ์ !lecture')
-        emBed.set_thumbnail(url="https://ejudge.it.kmitl.ac.th/assets/img/itlogo-140px.png")
+        emBed.set_thumbnail(url="https://cdn.discordapp.com/attachments/895008902712807494/902127838344380446/image-removebg-preview.png")
         emBed.set_footer(text="อาจารย์ผู้สอน รศ.ดร. โชติพัชร์ ภรณวลัย", icon_url="https://cdn.discordapp.com/attachments/908412010897743904/917076946372943922/Chotipat.jpg")
         await ctx.send(embed=emBed)
     
