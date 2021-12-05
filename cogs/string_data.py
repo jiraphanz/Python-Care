@@ -71,6 +71,15 @@ class string_data(commands.Cog):
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
+    # ลองใช้ isalnum
+    @commands.command()
+    async def isalpha(self, ctx, *, par):
+        x = par.isalpha()
+        emBed = discord.Embed(title="ลองใช้ isalnum", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.isalnum()\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
     # ลองใช้ isupper
     @commands.command()
     async def isupper(self, ctx, *, par):
