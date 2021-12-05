@@ -99,7 +99,7 @@ class math_data(commands.Cog):
             emBed = discord.Embed(title="math.log", description="Return ค่าตัวเลขให้อยู่ในรูปของ Log", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "2"\nx = math.log(txt)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=0.6931471805599453)
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มไปอีกหนึ่งตัวเพื่อเป็นฐานที่เราต้องการหา ', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มไปอีกหนึ่งตัวเพื่อเป็นฐานที่เราต้องการเเปลง ', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='x = math.log(8, 2)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=3)
             emBed.add_field(name="ลองใช้ log", value='!log ตัวเลขที่ต้องการ, ฐานที่ต้องการให้เเปลง', inline=False)
