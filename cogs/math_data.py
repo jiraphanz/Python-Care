@@ -26,6 +26,15 @@ class math_data(commands.Cog):
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
     
+    # ลองใช้ floor
+    @commands.command()
+    async def floor(self, ctx, *, par):
+        x = math.floor(float(par))
+        emBed = discord.Embed(title="ลองใช้ math.floor", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.floor(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+    
     # @commands.command()
 
     # รับข้อความจาก User ใน Topic ต่างๆ
