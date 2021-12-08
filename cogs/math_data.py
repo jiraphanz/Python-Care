@@ -1,4 +1,5 @@
 import discord
+import math
 from discord.ext import commands
 
 class math_data(commands.Cog):
@@ -6,7 +7,16 @@ class math_data(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    # ลองใช้เมธอด List
+    # ลองใช้เมธอด Math
+        # ลองใช้ ceil
+    @commands.command()
+    async def ceil(self, ctx, *, par):
+        x = math.ceil(par)
+        emBed = discord.Embed(title="ลองใช้ math.ceil", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = "{0}"\nx = math.ceil(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+    
     # @commands.command()
 
     # รับข้อความจาก User ใน Topic ต่างๆ
@@ -33,7 +43,7 @@ class math_data(commands.Cog):
 
         
         elif message.content == "!math ceil":
-            emBed = discord.Embed(title="math.ceil", description="ปัดค่าขึ้น 1 เมือมีทศนิยมมากว่า 0", color=0x6F9DC3)
+            emBed = discord.Embed(title="math.ceil", description="ปัดค่าขึ้น 1 เมื่อมีทศนิยมมากว่า 0", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = 1.5\nx = math.ceil(txt)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=2)
             emBed.add_field(name="ลองใช้ math.ceil", value='!ceil ตัวเลขที่ต้องการ', inline=False)
