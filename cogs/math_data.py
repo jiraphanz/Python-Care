@@ -41,7 +41,7 @@ class math_data(commands.Cog):
 
         
         elif message.content == "!math floor":
-            emBed = discord.Embed(title="math.floor", description="ปัดค่าลง 1 เมือมีทศนิยม", color=0x6F9DC3)
+            emBed = discord.Embed(title="math.floor", description="ปัดค่าลง 1 เมื่อมีทศนิยม", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "1.5"\nx = math.floor(txt)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='1')
             emBed.add_field(name="ลองใช้ floor", value='!floor ตัวเลขที่ต้องการ', inline=False)
