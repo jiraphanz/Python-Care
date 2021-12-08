@@ -7,7 +7,17 @@ class list_data(commands.Cog):
         self.bot = bot
 
     # ลองใช้เมธอด List
-    # @commands.command()
+
+    # ลองใช้ append
+    @commands.command()
+    async def append(self, ctx, *, par):
+        list = []
+        x = par
+        list.append(x)
+        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.append(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
+        await ctx.channel.send(embed=emBed)
 
     # รับข้อความจาก User ใน Topic ต่างๆ
     @commands.Cog.listener("on_message")
