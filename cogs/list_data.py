@@ -86,7 +86,7 @@ class list_data(commands.Cog):
 
     # ลองใช้ reverse
     @commands.command()
-    async def lreverse(self, ctx, *, par):
+    async def lreverse(self, ctx):
         list = ["A", "B", "C"]
         list.reverse()
         emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
@@ -96,7 +96,7 @@ class list_data(commands.Cog):
 
     # ลองใช้ sort
     @commands.command()
-    async def lsort(self, ctx, *, par):
+    async def lsort(self, ctx):
         list = ["A", "B", "C"]
         list.sort()
         emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
