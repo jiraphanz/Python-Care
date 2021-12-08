@@ -11,9 +11,18 @@ class math_data(commands.Cog):
         # ลองใช้ ceil
     @commands.command()
     async def ceil(self, ctx, *, par):
-        x = math.ceil(par)
+        x = math.ceil(float(par))
         emBed = discord.Embed(title="ลองใช้ math.ceil", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='number = "{0}"\nx = math.ceil(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.ceil(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+    
+    # ลองใช้ log
+    @commands.command()
+    async def ceil(self, ctx, par, par2):
+        x = math.log(float(par, par2))
+        emBed = discord.Embed(title="ลองใช้ math.log", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.log(number, {1})\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
     
@@ -23,7 +32,7 @@ class math_data(commands.Cog):
     @commands.Cog.listener("on_message")
     async def on_message(self, message):
 
-        #  List
+        #  Math
         if message.content == "!math":
             emBed = discord.Embed(title="Math", description="import math เพื่อเป็นการเรียกใช้ฟังก์ชัน Math \
             \nจะเป็นฟังก์ชั่น Math ที่ใช้บ่อยในการทำโจทย์พิมพ์ !math ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
