@@ -22,7 +22,7 @@ class math_data(commands.Cog):
     async def log(self, ctx, par, par2):
         x = math.log(int(par), int(par2))
         emBed = discord.Embed(title="ลองใช้ math.log", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.log(number, {1})\nprint(x)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='x = math.log({0}, {1})\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
     
