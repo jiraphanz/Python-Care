@@ -35,6 +35,25 @@ class math_data(commands.Cog):
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
     
+    # ลองใช้ sqrt
+    @commands.command()
+    async def floor(self, ctx, *, par):
+        x = math.sqrt(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.sqrt", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.sqrt(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ sin
+    @commands.command()
+    async def sin(self, ctx, *, par):
+        x = math.sin(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.sin", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.sin(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+
     # @commands.command()
 
     # รับข้อความจาก User ใน Topic ต่างๆ
