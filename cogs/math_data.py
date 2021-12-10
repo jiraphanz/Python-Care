@@ -8,7 +8,7 @@ class math_data(commands.Cog):
         self.bot = bot
 
     # ลองใช้เมธอด Math
-        # ลองใช้ ceil
+    # ลองใช้ ceil
     @commands.command()
     async def ceil(self, ctx, *, par):
         x = math.ceil(float(par))
@@ -52,6 +52,71 @@ class math_data(commands.Cog):
         emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.sin(number)\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
+    
+    # ลองใช้ cos
+    @commands.command()
+    async def cos(self, ctx, *, par):
+        x = math.cos(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.cos", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.cos(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ tan
+    @commands.command()
+    async def tan(self, ctx, *, par):
+        x = math.tan(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.tan", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.tan(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ radians
+    @commands.command()
+    async def radians(self, ctx, *, par):
+        x = math.radians(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.radians", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.radians(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ factorial
+    @commands.command()
+    async def factorial(self, ctx, *, par):
+        x = math.factorial(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.factorial", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.factorial(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ degrees
+    @commands.command()
+    async def degrees(self, ctx, *, par):
+        x = math.degrees(int(par))
+        emBed = discord.Embed(title="ลองใช้ math.degrees", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = math.degrees(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ abs
+    @commands.command()
+    async def abs(self, ctx, *, par):
+        x = abs(int(par))
+        emBed = discord.Embed(title="ลองใช้ abs", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='number = {0}\nx = abs(number)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+    # ลองใช้ pow
+    @commands.command()
+    async def pow(self, ctx, par, par2):
+        x = math.pow(int(par), int(par2))
+        emBed = discord.Embed(title="ลองใช้ math.pow", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='x = math.pow({0}, {1})\nprint(x)' .format(par, par2))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        await ctx.channel.send(embed=emBed)
+
+
 
 
     # @commands.command()
