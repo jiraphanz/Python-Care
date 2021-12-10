@@ -110,7 +110,7 @@ class dict_data(commands.Cog):
 
     # ลองใช้ popitem
     @commands.command()
-    async def dpopitem(self, ctx):
+    async def dvalues(self, ctx):
         dict = {"A": "0", "B": "1", "C": "2"}
         x = dict.values()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
