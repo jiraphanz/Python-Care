@@ -34,7 +34,7 @@ class dict_data(commands.Cog):
         y = str(par)
         x = dict.fromkeys(dict, y)
         emBed = discord.Embed(title="ลองใช้ dict.fromkeys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ny = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='y = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -44,7 +44,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.get(par)
         emBed = discord.Embed(title="ลองใช้ dict.get", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.get("{0}")\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='x = dict.get("{0}")\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -74,7 +74,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.pop(par)
         emBed = discord.Embed(title="ลองใช้ dict.pop", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.pop("{0}")\nprint(dict)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict.pop("{0}")\nprint(dict)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -94,7 +94,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.setdefault(par, par2)
         emBed = discord.Embed(title="ลองใช้ dict.setdefault", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='x = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -104,7 +104,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.update({par: par2})
         emBed = discord.Embed(title="ลองใช้ dict.update", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -166,7 +166,7 @@ class dict_data(commands.Cog):
             emBed = discord.Embed(title="dict.fromkeys", description="ใช้คืนค่า dictionary ด้วย key หรือ value ที่กำหนด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='x = ("key1", "key2", "key3")\ny = 0\nthisdict = dict.fromkeys(x, y)\nprint(thisdict)')
             emBed.add_field(name="ผลลัพธ์", value="['key1': 0, 'key2': 0, 'key3': 0]")
-            emBed.add_field(name="ลองใช้ fromkeys", value='โดยการพิม !dfromkeys ค่า value ที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ fromkeys", value='โดยการพิม !dfromkeys ค่า value ที่ต้องการ (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
 
