@@ -13,7 +13,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.clear()
         emBed = discord.Embed(title="ลองใช้ dict.clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \ndict.clear()\nprint(dict)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.clear()\nprint(dict)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -23,7 +23,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.copy()
         emBed = discord.Embed(title="ลองใช้ dict.copy", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": "1964"\n}\nx = dict.copy()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.copy()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -34,7 +34,7 @@ class dict_data(commands.Cog):
         y = par
         x = dict.fromkeys(dict, y)
         emBed = discord.Embed(title="ลองใช้ dict.fromkeys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \ny = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ny = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -44,7 +44,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.get(par)
         emBed = discord.Embed(title="ลองใช้ dict.get", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \nx = dict.get("{0}")\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.get("{0}")\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -54,7 +54,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.items()
         emBed = discord.Embed(title="ลองใช้ dict.items", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \nx = dict.items()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.items()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -64,7 +64,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.keys()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \nx = dict.keys()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.keys()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -74,7 +74,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.pop(par)
         emBed = discord.Embed(title="ลองใช้ dict.pop", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \ndict.pop("{0}")\nprint(dict)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.pop("{0}")\nprint(dict)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -84,7 +84,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.popitem()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \ndict.popitem()\nprint(dict)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.popitem()\nprint(dict)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -94,7 +94,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.setdefault(par, par2)
         emBed = discord.Embed(title="ลองใช้ dict.setdefault", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \nx = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -104,7 +104,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.update({par: par2})
         emBed = discord.Embed(title="ลองใช้ dict.update", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \ndict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
@@ -114,7 +114,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.values()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict =   \nx = dict.values()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.values()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
