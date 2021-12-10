@@ -12,7 +12,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def islower(self, ctx, *, par):
         x = par.islower()
-        emBed = discord.Embed(title="ลองใช้ islower", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.islower", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.islower()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -21,7 +21,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def count(self, ctx, par, *, par2):
         x = par2.count(par)
-        emBed = discord.Embed(title="ลองใช้ count", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.count", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.count({0})\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -30,7 +30,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def cap(self, ctx, *, par):
         x = par.capitalize()
-        emBed = discord.Embed(title="ลองใช้ capitalize", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.capitalize", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.capitalize()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -39,7 +39,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def center(self, ctx, par, *, par2):
         x = par2.center(int(par))
-        emBed = discord.Embed(title="ลองใช้ center", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.center", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.center({1})\nprint(x)' .format(par2, par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -48,7 +48,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def find(self, ctx, par, *, par2):
         x = par2.find(par)
-        emBed = discord.Embed(title="ลองใช้ find", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.find", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.find("{0}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -57,7 +57,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def index(self, ctx, par, *, par2):
         x = par2.index(par)
-        emBed = discord.Embed(title="ลองใช้ index", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.index", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.index("{0}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -66,7 +66,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def isalnum(self, ctx, *, par):
         x = par.isalnum()
-        emBed = discord.Embed(title="ลองใช้ isalnum", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.isalnum", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.isalnum()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -75,7 +75,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def isalpha(self, ctx, *, par):
         x = par.isalpha()
-        emBed = discord.Embed(title="ลองใช้ isalnum", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.isalnum", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.isalnum()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -84,7 +84,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def isupper(self, ctx, *, par):
         x = par.isupper()
-        emBed = discord.Embed(title="ลองใช้ isupper", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.isupper", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.isupper()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -93,7 +93,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def isnumeric(self, ctx, *, par):
         x = par.isnumeric()
-        emBed = discord.Embed(title="ลองใช้ isnumeric", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.isnumeric", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.isnumeric()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -102,7 +102,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def ljust(self, ctx, par, *, par2):
         x = par2.ljust(par)
-        emBed = discord.Embed(title="ลองใช้ ljust", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.ljust", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.ljust({0})\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -111,7 +111,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def lower(self, ctx, *, par):
         x = par.lower()
-        emBed = discord.Embed(title="ลองใช้ lower", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.lower", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.lower()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -120,7 +120,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def lstrip(self, ctx, *, par):
         x = par.lstrip()
-        emBed = discord.Embed(title="ลองใช้ lstrip", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.lstrip", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.lstrip()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -130,7 +130,7 @@ class string_data(commands.Cog):
     async def replace(self, ctx, par, *, par2):
         text = "I love PSIT"
         x = text.replace(par, par2)
-        emBed = discord.Embed(title="ลองใช้ replace", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.replace", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "I love PSIT"\nx = text.replace("{0}", "{1}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -139,7 +139,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def rfind(self, ctx, par, *, par2):
         x = par2.rfind(par)
-        emBed = discord.Embed(title="ลองใช้ rfind", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.rfind", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.rfind("{0}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -149,7 +149,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def strip(self, ctx, *, par):
         x = par.strip()
-        emBed = discord.Embed(title="ลองใช้ strip", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.strip", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.strip()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -158,7 +158,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def split(self, ctx, par, *, par2):
         x = par2.split(par)
-        emBed = discord.Embed(title="ลองใช้ split", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.split", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{1}"\nx = text.split("{0}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -167,7 +167,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def swapcase(self, ctx, *, par):
         x = par.swapcase()
-        emBed = discord.Embed(title="ลองใช้ swapcase", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.swapcase", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.swapcase()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -176,7 +176,7 @@ class string_data(commands.Cog):
     @commands.command()
     async def upper(self, ctx, *, par):
         x = par.upper()
-        emBed = discord.Embed(title="ลองใช้ upper", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ string.upper", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='text = "{0}"\nx = text.upper()\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)

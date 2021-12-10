@@ -14,7 +14,7 @@ class list_data(commands.Cog):
         list = []
         x = par
         list.append(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ list.append", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.append(x)\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
@@ -24,8 +24,8 @@ class list_data(commands.Cog):
     async def lclear(self, ctx):
         list = ["A", "B", "C"]
         list.clear()
-        emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]"\nlist.clear()\nprint(list)')
+        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.clear()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
@@ -33,11 +33,10 @@ class list_data(commands.Cog):
     @commands.command()
     async def lcopy(self, ctx, *, par):
         list = ["A", "B", "C"]
-        x = par
-        list.append(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.append(x)\nprint(list)' .format(par))
-        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
+        x = list.copy()
+        emBed = discord.Embed(title="ลองใช้ list.copy", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = {0}\nlist.copy(x)\nprint(x)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ extend
@@ -46,8 +45,8 @@ class list_data(commands.Cog):
         list = []
         x = par
         list.extend(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.extend(x)\nprint(list)' .format(par))
+        emBed = discord.Embed(title="ลองใช้ list.extend", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = {0}\nlist.extend(x)\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
@@ -55,10 +54,9 @@ class list_data(commands.Cog):
     @commands.command()
     async def lindex(self, ctx, *, par):
         list = []
-        x = par
-        list.index(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.index(x)\nprint(x)' .format(par))
+        x = list.index(par)
+        emBed = discord.Embed(title="ลองใช้ list.index", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.index({0})\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -66,22 +64,20 @@ class list_data(commands.Cog):
     @commands.command()
     async def lpop(self, ctx, *, par):
         list = []
-        x = par
-        list.pop(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.pop(x)\nprint(list)' .format(par))
-        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
+        x = list.pop(par)
+        emBed = discord.Embed(title="ลองใช้ list.pop", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.pop({0})\nprint(list)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ remove
     @commands.command()
     async def lremove(self, ctx, *, par):
         list = []
-        x = par
-        list.remove(x)
-        emBed = discord.Embed(title="ลองใช้ append", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = "[]"\nx = {0}\nlist.remove(x)\nprint(list)' .format(par))
-        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
+        x = list.remove(par)
+        emBed = discord.Embed(title="ลองใช้ list.remvoe", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.remove({0})\nprint(list)' .format(par))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ reverse
@@ -89,8 +85,8 @@ class list_data(commands.Cog):
     async def lreverse(self, ctx):
         list = ["A", "B", "C"]
         list.reverse()
-        emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]"\nlist.reverse()\nprint(list)')
+        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.reverse()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
@@ -99,8 +95,8 @@ class list_data(commands.Cog):
     async def lsort(self, ctx):
         list = ["A", "B", "C"]
         list.sort()
-        emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]"\nlist.sort()\nprint(list)')
+        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.sort()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
     
@@ -109,8 +105,8 @@ class list_data(commands.Cog):
     async def lcount(self, ctx, *, par):
         list = ["A", "B", "C"]
         list.count(par)
-        emBed = discord.Embed(title="ลองใช้ clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]"\nlist.clear()\nprint(list)')
+        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.clear()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
@@ -187,7 +183,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.pop", description="Method ที่ลบข้อมูลณ ตำแหน่งที่ระบุ", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.pop(1)')
             emBed.add_field(name="ผลลัพธ์", value=["apple", "cherry"])
-            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !lpop ตำแหน่งที่ต้องการลบ (ลิสต์คือ ["A", "B", "C"])', inline=False)
+            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !lpop ตำแหน่งที่ต้องการลบ(เป็นตัวเลข 0-2)', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด remove
@@ -203,7 +199,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.reverse", description="Method ทีย้อนกลับหรือสลับข้อมูลทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits =["apple", "banana", "cherry"]\nx = fruits.reverse()')
             emBed.add_field(name="ผลลัพธ์", value=["cherry", "banana", "apple"])
-            emBed.add_field(name="ลองใช้ reverse", value='โดยการพิม !lreverse (ลิสต์คือ ["A", "B", "C"])', inline=False)
+            emBed.add_field(name="ลองใช้ reverse", value='โดยการพิม !lreverse', inline=False)
             await message.channel.send(embed=emBed)
 
         #  List เมธอด sort
@@ -211,7 +207,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.sort", description="Method ทีใช้เรียงตัวอักษรหรือตัวเลขจากน้อยไปมาก เเละยังสามารถใช้ร่วมกับ reverse ได้ด้วย", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='cars = ["Ford", "BMW", "Volvo"]\nx = cars.sort()')
             emBed.add_field(name="ผลลัพธ์", value=["BMW", "Ford", "Volvo"])
-            emBed.add_field(name="ลองใช้ sort", value='โดยการพิม !lsort (ลิสต์คือ ["A", "B", "C"])', inline=False)
+            emBed.add_field(name="ลองใช้ sort", value='โดยการพิม !lsort', inline=False)
             await message.channel.send(embed=emBed)
             
 
