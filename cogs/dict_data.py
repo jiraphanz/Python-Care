@@ -10,111 +10,111 @@ class dict_data(commands.Cog):
     # ลองใช้ clear
     @commands.command()
     async def dclear(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.clear()
         emBed = discord.Embed(title="ลองใช้ dict.clear", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\ndict.clear()\nprint(dict)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.clear()\nprint(dict)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ copy
     @commands.command()
     async def dcopy(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.copy()
         emBed = discord.Embed(title="ลองใช้ dict.copy", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.copy()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.copy()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ fromkeys
     @commands.command()
     async def dfromkeys(self, ctx, *, par):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         y = par
         x = dict.fromkeys(dict, y)
         emBed = discord.Embed(title="ลองใช้ dict.fromkeys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\ny = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ny = {0}\nx = dict.fromkeys(dict, y)\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ get
     @commands.command()
     async def dget(self, ctx, *, par):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.get(par)
         emBed = discord.Embed(title="ลองใช้ dict.get", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.get("{0}")\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.get("{0}")\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ items
     @commands.command()
     async def ditems(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.items()
         emBed = discord.Embed(title="ลองใช้ dict.items", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.items()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.items()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ keys
     @commands.command()
     async def dkeys(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.keys()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.keys()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.keys()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ pop
     @commands.command()
     async def dpop(self, ctx, *, par):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.pop(par)
         emBed = discord.Embed(title="ลองใช้ dict.pop", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\ndict.pop("{0}")\nprint(dict)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.pop("{0}")\nprint(dict)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ popitem
     @commands.command()
     async def dpopitem(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.popitem()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\ndict.popitem()\nprint(dict)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.popitem()\nprint(dict)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ setdefault
     @commands.command()
     async def dset(self, ctx, par, par2):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.setdefault(par, par2)
         emBed = discord.Embed(title="ลองใช้ dict.setdefault", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.setdefault("{0}", "{1}")\nprint(x)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ update
     @commands.command()
     async def dupdate(self, ctx, par, par2):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.update({par: par2})
         emBed = discord.Embed(title="ลองใช้ dict.update", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\ndict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\ndict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ popitem
     @commands.command()
     async def dvalues(self, ctx):
-        dict = {"A": "0", "B": "1", "C": "2"}
+        dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         x = dict.values()
         emBed = discord.Embed(title="ลองใช้ dict.keys", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"A": "0",\n"B": "1",\n"C": "2"\n}\nx = dict.values()\nprint(x)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict = {\n"brand": "Ford",\n"model": "Mustang",\n"year": "1964"\n}\nx = dict.values()\nprint(x)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -176,7 +176,7 @@ class dict_data(commands.Cog):
             emBed = discord.Embed(title="dict.get", description="ใช้ส่งค่าข้อมูลใน Dictionary จาก Key ที่กำหนด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.get("model")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='Mustang')
-            emBed.add_field(name="ลองใช้ get", value='โดยการพิม !dget คีย์ที่ต้องการดู (dict คือ {"A": "0", "B": "1", "C": "2"})', inline=False)
+            emBed.add_field(name="ลองใช้ get", value='โดยการพิม !dget คีย์ที่ต้องการดู (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
 
@@ -207,7 +207,7 @@ class dict_data(commands.Cog):
             emBed = discord.Embed(title="dict.pop", description="ใช้ส่งค่ากลับเป็นค่าสุดท้ายใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.pop("model")\nprint(car)')
             emBed.add_field(name="ผลลัพธ์", value="{'brand': 'Ford', 'year': 1964}")
-            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !dpop คีย์ที่ต้องการลบ (dict คือ{"A": "0", "B": "1", "C": "2"})', inline=False)
+            emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !dpop คีย์ที่ต้องการลบ (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
 
@@ -225,7 +225,7 @@ class dict_data(commands.Cog):
             emBed = discord.Embed(title="dict.setdefault", description="ใช้ส่งค่ากลับเป็นค่าของ Key ที่กำหนด ถ้าหากไม่มี Key อยู่ใส่ข้อมูลเข้าไปใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.setdefault("model", "Bronco")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='Mustang')
-            emBed.add_field(name="ลองใช้ setdefault", value='โดยการพิม !dset (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ{"A": "0", "B": "1", "C": "2"})', inline=False)
+            emBed.add_field(name="ลองใช้ setdefault", value='โดยการพิม !dset (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
 
@@ -234,7 +234,7 @@ class dict_data(commands.Cog):
             emBed = discord.Embed(title="dict.update", description="ใช้อัพเดท Dictionary กับคู่ของ Key และ Value จากออบเจ็คอื่น และเขียนทับ Key ที่มีอยู่", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.update({"color": "White"})\nprint(car)')
             emBed.add_field(name="ผลลัพธ์", value="{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}")
-            emBed.add_field(name="ลองใช้ update", value='โดยการพิม !dupdate (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ{"A": "0", "B": "1", "C": "2"})', inline=False)
+            emBed.add_field(name="ลองใช้ update", value='โดยการพิม !dupdate (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
 
