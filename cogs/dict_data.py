@@ -122,7 +122,7 @@ class dict_data(commands.Cog):
     @commands.Cog.listener("on_message")
     async def on_message(self, message):
 
-        #Dictionary
+        # Dictionary
         if message.content == "!dict":
             emBed = discord.Embed(title="Dictionary", description="Dictionary คือประเภทข้อมูลที่เก็บข้อมูลในรูปแบบคู่ของ Key และ Value โดยที่ Key \
             ใช้สำหรับเป็น Index ในการเข้าถึงข้อมูลและ Value เป็นค่าข้อมูลที่สอดคล้องกับ Key ของมัน\nDictionary Method ที่ใช้บ่อยในการทำโจทย์พิมพ์ !list ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
@@ -139,9 +139,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="values", value='ส่งค่ากลับเป็น List ของ Value ทั้งหมดใน Dictionary')
             await message.channel.send(embed=emBed)
 
-
-
-    #Dict clear
+        # Dict เมธอด clear
         elif message.content == "!dict clear":
             emBed = discord.Embed(title="dict.clear", description="ใช้ลบข้อมูลทั้งหมดภายใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car =	{\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.clear()\nprint(car)')
@@ -149,10 +147,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ clear", value='โดยการพิม !dclear', inline=False)
             await message.channel.send(embed=emBed)
         
-
-
-
-    #Dict copy
+        # Dict เมธอด copy
         elif message.content == "!dict copy":
             emBed = discord.Embed(title="dict.copy", description="ใช้คัดลอก Dictionary ทั้งหมดไปยังอันใหม่", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.copy()\nprint(x)')
@@ -160,8 +155,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ clear", value='โดยการพิม !dcopy', inline=False)
             await message.channel.send(embed=emBed)
 
-
-    #Dict fromkeys
+        # Dict เมธอด fromkeys
         elif message.content == "!dict fromkeys":
             emBed = discord.Embed(title="dict.fromkeys", description="ใช้คืนค่า dictionary ด้วย key หรือ value ที่กำหนด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='x = ("key1", "key2", "key3")\ny = 0\nthisdict = dict.fromkeys(x, y)\nprint(thisdict)')
@@ -169,9 +163,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ fromkeys", value='โดยการพิม !dfromkeys ค่า value ที่ต้องการ (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
-
-
-    #Dict get
+        # Dict เมธอด get
         elif message.content == "!dict get":
             emBed = discord.Embed(title="dict.get", description="ใช้ส่งค่าข้อมูลใน Dictionary จาก Key ที่กำหนด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.get("model")\nprint(x)')
@@ -179,10 +171,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ get", value='โดยการพิม !dget คีย์ที่ต้องการดู (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
-
-
-
-    #Dict items
+        # Dict เมธอด items
         elif message.content == "!dict items":
             emBed = discord.Embed(title="dict.items", description="ใช้ส่งค่ากลับเป็นออบเจ็คของ Key และ Value", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.items()\nprint(x)')
@@ -190,9 +179,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ items", value='โดยการพิม !ditems', inline=False)
             await message.channel.send(embed=emBed)
 
-
-
-    #Dict key
+        # Dict เมธอด key
         elif message.content == "!dict keys":
             emBed = discord.Embed(title="dict.keys", description="ใช้ส่งค่ากลับเป็น List ของ Key ทั้งหมดใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.keys()\nprint(x)')
@@ -200,9 +187,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ keys", value='โดยการพิม !dkeys', inline=False)
             await message.channel.send(embed=emBed)
 
-
-
-    #Dict pop
+        # Dict เมธอด pop
         elif message.content == "!dict pop":
             emBed = discord.Embed(title="dict.pop", description="ใช้ส่งค่ากลับเป็นค่าสุดท้ายใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.pop("model")\nprint(car)')
@@ -210,8 +195,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ pop", value='โดยการพิม !dpop คีย์ที่ต้องการลบ (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
-
-    #Dict popitem
+        # Dict เมธอด popitem
         elif message.content == "!dict popitem":
             emBed = discord.Embed(title="dict.popitem", description="ใช้ส่งค่ากลับเป็น Tuple ออบเจ็คของ Key และ Value", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.popitem()\nprint(car)')
@@ -219,8 +203,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ popitem", value='โดยการพิม !dpopitem', inline=False)
             await message.channel.send(embed=emBed)
 
-        
-    #Dict setdefault
+        # Dict เมธอด setdefault
         elif message.content == "!dict setdefault":
             emBed = discord.Embed(title="dict.setdefault", description="ใช้ส่งค่ากลับเป็นค่าของ Key ที่กำหนด ถ้าหากไม่มี Key อยู่ใส่ข้อมูลเข้าไปใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.setdefault("model", "Bronco")\nprint(x)')
@@ -228,8 +211,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ setdefault", value='โดยการพิม !dset (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
-
-    #Dict update
+        # Dict เมธอด update
         elif message.content == "!dict update":
             emBed = discord.Embed(title="dict.update", description="ใช้อัพเดท Dictionary กับคู่ของ Key และ Value จากออบเจ็คอื่น และเขียนทับ Key ที่มีอยู่", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\ncar.update({"color": "White"})\nprint(car)')
@@ -237,8 +219,7 @@ class dict_data(commands.Cog):
             emBed.add_field(name="ลองใช้ update", value='โดยการพิม !dupdate (คีย์ที่ต้องการ, ค่า value *ทั้งสองตัวห้ามเว้นวรรค) (dict คือ {"brand": "Ford", "model": "Mustang", "year": "1964"})', inline=False)
             await message.channel.send(embed=emBed)
 
-
-    #Dict values
+        # Dict เมธอด values
         elif message.content == "!dict values":
             emBed = discord.Embed(title="dict.values", description="ใช้ส่งค่ากลับเป็น List ของ Value ทั้งหมดใน Dictionary", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='car = {\n  "brand": "Ford",\n  "model": "Mustang",\n  "year": 1964\n}\nx = car.values()\nprint(x)')
