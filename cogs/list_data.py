@@ -43,8 +43,7 @@ class list_data(commands.Cog):
     @commands.command()
     async def lextend(self, ctx, *, par):
         list = []
-        x = par
-        list.extend(x)
+        list.extend(par)
         emBed = discord.Embed(title="ลองใช้ list.extend", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = {0}\nlist.extend(x)\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
@@ -54,7 +53,7 @@ class list_data(commands.Cog):
     @commands.command()
     async def lindex(self, ctx, *, par):
         list = ["A", "B", "C"]
-        x = list.index(par)
+        x = list.index(str(par))
         emBed = discord.Embed(title="ลองใช้ list.index", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.index({0})\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
@@ -64,7 +63,7 @@ class list_data(commands.Cog):
     @commands.command()
     async def lpop(self, ctx, par):
         list = ["A", "B", "C"]
-        x = list.pop(par)
+        x = list.pop(int(par))
         emBed = discord.Embed(title="ลองใช้ list.pop", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.pop({0})\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
