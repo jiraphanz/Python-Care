@@ -28,4 +28,4 @@ class colab(commands.Cog):
     
 
 def setup(bot):
-    bot.add_cog(lecture_replay(bot))
+    bot.add_cog(colab(bot))
