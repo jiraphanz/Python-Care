@@ -127,8 +127,8 @@ class math_data(commands.Cog):
 
         #  Math
         if message.content == "!math":
-            emBed = discord.Embed(title="Math", description="import math เพื่อเป็นการเรียกใช้ฟังก์ชัน Math \
-            \nจะเป็นฟังก์ชั่น Math ที่ใช้บ่อยในการทำโจทย์พิมพ์ !math ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
+            emBed = discord.Embed(title="Math", description="Math เป็นการเรียกใช้ฟังก์ชันทางคณิตศาสตร์ในภาษา Pythons \
+            \nMath function ที่ใช้บ่อยในการทำโจทย์พิมพ์ !math ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
             emBed.add_field(name="ceil", value='ปัดเศษขึ้น')
             emBed.add_field(name="floor", value='ปัดเศษลง')
             emBed.add_field(name="sqrt", value='Square root ตัวเลขที่เราใส่ลงไป')
