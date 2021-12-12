@@ -8,7 +8,7 @@ class colab(commands.Cog):
 
     # ลองใช้ islower
     @commands.command()
-    async def lecture(self, ctx):
+    async def colab(self, ctx):
         emBed = discord.Embed(title="รวมลิงค์ Google Colab Research ที่ใช้ในการเรียนการสอน วิชา PSIT 2021", description="ลิงค์ Google Colab Research การเรียนการสอนทั้งหมด:\n[PSIT2021 Week 01: Introduction](-)\n"
         "[PSIT2021 Week 02: Conditionals](https://colab.research.google.com/drive/1Ce3t-jdJu5EGlzWufWkLVqoRLHJAyBEx)\n"
         "[PSIT2021 Week 03: ](-)\n"
