@@ -53,7 +53,7 @@ class list_data(commands.Cog):
     # ลองใช้ index
     @commands.command()
     async def lindex(self, ctx, *, par):
-        list = []
+        list = ["A", "B", "C"]
         x = list.index(par)
         emBed = discord.Embed(title="ลองใช้ list.index", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.index({0})\nprint(x)' .format(par))
@@ -62,8 +62,8 @@ class list_data(commands.Cog):
 
     # ลองใช้ pop
     @commands.command()
-    async def lpop(self, ctx, *, par):
-        list = []
+    async def lpop(self, ctx, par):
+        list = ["A", "B", "C"]
         x = list.pop(par)
         emBed = discord.Embed(title="ลองใช้ list.pop", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.pop({0})\nprint(list)' .format(par))
@@ -73,9 +73,9 @@ class list_data(commands.Cog):
     # ลองใช้ remove
     @commands.command()
     async def lremove(self, ctx, *, par):
-        list = []
+        list = ["A", "B", "C"]
         x = list.remove(par)
-        emBed = discord.Embed(title="ลองใช้ list.remvoe", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ list.remove", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.remove({0})\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
@@ -85,7 +85,7 @@ class list_data(commands.Cog):
     async def lreverse(self, ctx):
         list = ["A", "B", "C"]
         list.reverse()
-        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ list.reverse", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.reverse()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
@@ -95,7 +95,7 @@ class list_data(commands.Cog):
     async def lsort(self, ctx):
         list = ["A", "B", "C"]
         list.sort()
-        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ list.sort", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.sort()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
@@ -105,7 +105,7 @@ class list_data(commands.Cog):
     async def lcount(self, ctx, *, par):
         list = ["A", "B", "C"]
         list.count(par)
-        emBed = discord.Embed(title="ลองใช้ list.clear", description="", color=0x6F9DC3)
+        emBed = discord.Embed(title="ลองใช้ list.count", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.clear()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
