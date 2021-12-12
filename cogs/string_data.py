@@ -221,7 +221,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.islower", description="เช็คตัวอักษรทั้งหมดในข้อความว่าเป็นตัวพิมพ์เล็กหรือไม่ถ้าใช่จะ Return ค่าออกมาเป็น True", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "hello world!"\nx = txt.islower()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='True')
-            emBed.add_field(name="ลองใช้ islower", value='โดยการพิม !islower ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ islower", value='โดยการพิมพ์ !islower ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมธอด capitalize
@@ -229,7 +229,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.capitalize", description="เปลี่ยนตัวอักษรตัวเเรกของประโยคให้เป็นตัวใหญ่เเล้วเปลี่ยนตัวอักษรที่เหลือเป็นตัวเล็ก", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "hello World!"\nx = txt.capitalize()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='Hello world!')
-            emBed.add_field(name="ลองใช้ capitalize", value='โดยการพิม !cap ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ capitalize", value='โดยการพิมพ์ !cap ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมธอด count
@@ -240,7 +240,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าว่าจะให้เริ่มนับตั้งเเต่ตำเเหน่งไหนและหยุดนับที่ตำแหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Psit is veryeasy easy" \n x = txt.count("easy", 10, 17)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='1')
-            emBed.add_field(name="ลองใช้ count", value='โดยการพิม !count ข้อความ, คำที่จะนับ', inline=False)
+            emBed.add_field(name="ลองใช้ count", value='โดยการพิมพ์ !count ข้อความ, คำที่จะนับ', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด center
@@ -261,7 +261,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ find", value='โดยการพิม !find ข้อความ, คำที่จะหา', inline=False)
+            emBed.add_field(name="ลองใช้ find", value='โดยการพิมพ์ !find ข้อความ, คำที่จะหา', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด index
@@ -272,7 +272,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ index", value='โดยการพิม !index ข้อความ, ตำเเหน่งที่จะให้เริ่มหา', inline=False)
+            emBed.add_field(name="ลองใช้ index", value='โดยการพิมพ์ !index ข้อความ, ตำเเหน่งที่จะให้เริ่มหา', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isalnum
@@ -280,7 +280,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isalnum", description="เช็คข้อความทุกตัวว่าเป็น Alphabet(a-z) เเละมีเลข (0-9) ไหมถ้าตรงตามเงื่อนไขจะ Return ออกมาเป็น True", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Company12"\nx = txt.isalnum()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isalnum", value='โดยการพิม !isalnum ข้อความที่ต้องการเช็ค', inline=False)
+            emBed.add_field(name="ลองใช้ isalnum", value='โดยการพิมพ์ !isalnum ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isalpha
@@ -288,7 +288,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isalpha", description= "จะ Return ค่าเป็น True เมื่อข้อความทุกตัวเป็น Alphabet(a-z)", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Company"\nx = txt.isalpha()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isalpha", value='โดยการพิม !isalpha ข้อความที่ต้องการเช็ค', inline=False)
+            emBed.add_field(name="ลองใช้ isalpha", value='โดยการพิมพ์ !isalpha ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isnumeric
@@ -296,7 +296,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isnumeric", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวเลขทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "1234345"\nx = txt.isnumeric()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isnumeric", value='โดยการพิม !isnumeric ข้อความที่ต้องการเช็ค', inline=False)
+            emBed.add_field(name="ลองใช้ isnumeric", value='โดยการพิมพ์ !isnumeric ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isupper
@@ -304,7 +304,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.isupper", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวเลขใหญ่ทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "CENTER"\nx = txt.isupper()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
-            emBed.add_field(name="ลองใช้ isupper", value='โดยการพิม !isupper ข้อความที่ต้องการเช็ค', inline=False)
+            emBed.add_field(name="ลองใช้ isupper", value='โดยการพิมพ์ !isupper ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด ljust
@@ -322,7 +322,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.lower", description="เเปลงข้อความตัวใหญ๋ให้เป็นตัวเล็ก", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "OOP"\nx = txt.lower()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="oop")
-            emBed.add_field(name="ลองใช้ lower", value='โดยการพิม !lower ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ lower", value='โดยการพิมพ์ !lower ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด lstrip
@@ -333,7 +333,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถนำข้อความที่ไม่ต้องการทางด้านซ้ายออกได้โดยการใส่ที่ต้องการนำออกไป', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "aaaaOOPmm"\nx = txt.lstrip("a")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="OOPmm")
-            emBed.add_field(name="ลองใช้ lstrip", value='โดยการพิม !lstrip ข้อความที่มีช่องว่างด้านซ้าย', inline=False)
+            emBed.add_field(name="ลองใช้ lstrip", value='โดยการพิมพ์ !lstrip ข้อความที่มีช่องว่างด้านซ้าย', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด replace
@@ -344,7 +344,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='ถ้ามีคำซ้ำหลายๆคำสามารถกำหนดได้ว่าจะเเทนค่าเเค่กี่คำ', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "one one was a race horse, two was one too."\nx = txt.replace("one", "five", 2)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="five five was a race horse, two was one too.")
-            emBed.add_field(name="ลองใช้ replace", value='โดยการพิม !replace ข้อความที่ต้องการให้แทนที่, คำที่จะแทนที่ (ข้อความคือ I love PSIT) ', inline=False)
+            emBed.add_field(name="ลองใช้ replace", value='โดยการพิมพ์ !replace ข้อความที่ต้องการให้แทนที่, คำที่จะแทนที่ (ข้อความคือ I love PSIT) ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rfind
@@ -355,7 +355,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.rfind("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิม !rfind คำที่ต้องการหา ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิมพ์ !rfind คำที่ต้องการหา ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rjust
@@ -376,7 +376,7 @@ class string_data(commands.Cog):
         #     emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='', inline=False)
         #     emBed.add_field(name="ตัวอย่างโค้ด", value='txt = ""\nx = txt.()\nprint(x)')
         #     emBed.add_field(name="ผลลัพธ์", value="")
-        #     emBed.add_field(name="ลองใช้ rsplit", value='โดยการพิม !rsplit ข้อความที่มีช่องว่างด้านขวา', inline=False)
+        #     emBed.add_field(name="ลองใช้ rsplit", value='โดยการพิมพ์ !rsplit ข้อความที่มีช่องว่างด้านขวา', inline=False)
         #     await message.channel.send(embed=emBed)
         
         # String เมทธอด strip
@@ -387,7 +387,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถกำหนดว่าจะเอาข้อความตัวไหนออก', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "mmmbananammm"\nx = txt.strip("mmm")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="banana")
-            emBed.add_field(name="ลองใช้ strip", value='โดยการพิม !strip ข้อความที่มีช่องว่าง', inline=False)
+            emBed.add_field(name="ลองใช้ strip", value='โดยการพิมพ์ !strip ข้อความที่มีช่องว่าง', inline=False)
             await message.channel.send(embed=emBed)
     
         # String เมทธอด split
@@ -398,7 +398,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถกำหนดว่าจะเอาstringตัวทีจะให้เอาออกกี่ตัว', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple#banana#cherry#orange""\nx = txt.split("#", 1)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="['apple', 'banana#cherry#orange']")
-            emBed.add_field(name="ลองใช้ split", value='โดยการพิม !split ข้อความ, คำที่ต้องหารเอาออก', inline=False)
+            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split ข้อความ, คำที่ต้องหารเอาออก', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด swapcase
@@ -406,7 +406,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.swapcase", description="สลับข้อความตัวเล็กให้เป็นตัวใหญ่เเละสลับข้อความตัวใหญ่ให้เป็นตัวเล็ก", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Apple bANANA"\nx = txt.swapcase()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="aPPLE Bnana")
-            emBed.add_field(name="ลองใช้ swapcase", value='โดยการพิม !swapcase ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ swapcase", value='โดยการพิมพ์ !swapcase ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด upper
@@ -414,7 +414,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.upper", description="เปลี่ยนข้อความให้เป็นตัวใหญ่ทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple"\nx = txt.upper()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="APPLE")
-            emBed.add_field(name="ลองใช้ upper", value='โดยการพิม !upper ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ upper", value='โดยการพิมพ์ !upper ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
 
 
