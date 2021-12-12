@@ -17,7 +17,6 @@ async def pc(ctx):
     emBed.set_thumbnail(url="https://cdn.discordapp.com/attachments/901727442887143424/902060735973163059/voe.png")
     emBed.add_field(name="Methods", value='!string สตริง\n!list ลิสต์\n!math ฟังก์ชั่นคณิตศาสตร์\n!dict ดิกชันนารี')
     emBed.add_field(name="PSIT Lectures", value='!lecture ดูคลิปการเรียนการสอนวิชา PSIT')
-    emBed.add_field(name="PSIT Google Colab Research", value='!colab เพื่อดูไฟล์ประกอบการสอนวิชา Psit')
     emBed.set_footer(text="Created by 2P1B", icon_url="https://cdn.discordapp.com/attachments/895008902712807494/902127838344380446/image-removebg-preview.png")
     await ctx.send(embed=emBed)
 
