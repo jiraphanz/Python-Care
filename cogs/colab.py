@@ -9,7 +9,7 @@ class colab(commands.Cog):
     # ลองใช้ islower
     @commands.command()
     async def colab(self, ctx):
-        emBed = discord.Embed(title="รวมลิงค์ Google Colab Research ที่ใช้ในการเรียนการสอน วิชา PSIT 2021", description="ลิงค์ Google Colab Research การเรียนการสอนทั้งหมด:\n[PSIT2021 Week 01: Introduction](-)\n"
+        emBed = discord.Embed(title="รวมลิงค์ Google Colab Research ที่ใช้ในการเรียนการสอน วิชา PSIT 2021", description="ลิงค์ Google Colab Research การเรียนการสอนทั้งหมด:\n"
         "[PSIT2021 Week 02: Conditionals](https://colab.research.google.com/drive/1Ce3t-jdJu5EGlzWufWkLVqoRLHJAyBEx)\n"
         "[PSIT2021 Week 04: TurtleWorld](https://colab.research.google.com/drive/1NeRHeCVCvraFq6R-3euk5KvrT-DjJ-d-?usp=sharing&fbclid=IwAR1xyYSg535fvwhO1xuz2XrvBOVxPnu-cAKOcIskDrS4sjJ10LofHnAkNNc)\n"
         "[PSIT2021 Week 05: Iteration](https://colab.research.google.com/drive/1pLQq7hTKb6-09CJ0wZpMZTSMWRaHGuKj?usp=sharing&fbclid=IwAR2jDlbKP8XrfUtWznXp5whJrvgEJ8Z47uQpwefivrH-s28eQWxWeTrXqJw)\n"
