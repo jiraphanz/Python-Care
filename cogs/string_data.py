@@ -194,7 +194,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="String", description="String ในภาษาไพทอน จะถูกล้อมไปด้วย Single Quote\
             หรือ Double Quote\nString Method ที่ใช้บ่อยในการทำโจทย์พิมพ์ !string ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
             emBed.add_field(name="capitalize", value='เปลี่ยนตัวแรกให้เป็นตัวพิมพ์ใหญ่')
-            emBed.add_field(name="lower", value='ข้อความตัวใหญ๋ให้เป็นตัวเล็ก')
+            emBed.add_field(name="lower", value='เปลี่ยนข้อความตัวใหญ๋ให้เป็นตัวเล็ก')
             emBed.add_field(name="upper", value='เปลี่ยนข้อความให้เป็นตัวใหญ่ทั้งหมด')
             emBed.add_field(name="swapcase", value='สลับขนาดตัวอักษรให้เป็นตรงกันข้าม')
             emBed.add_field(name="islower", value='เช็คว่าเป็นตัวพิมพ์เล็กทั้งหมดไหม')
