@@ -125,7 +125,7 @@ class dict_data(commands.Cog):
         # Dictionary
         if message.content == "!dict":
             emBed = discord.Embed(title="Dictionary", description="Dictionary คือประเภทข้อมูลที่เก็บข้อมูลในรูปแบบคู่ของ Key และ Value โดย Key \
-            เป็น Index ในการเข้าถึงข้อมูล Value จะเป็นค่าข้อมูลที่สอดคล้องกับ Key\nDictionary Method ที่ใช้บ่อยในการทำโจทย์พิมพ์ !list ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
+            เป็น Index ในการเข้าถึงข้อมูล Value จะเป็นค่าข้อมูลที่สอดคล้องกับ Key\nDictionary Method ที่ใช้บ่อยในการทำโจทย์พิมพ์ !dict ตามด้วยชื่อ Method เพื่อเรียกดู", color=0x6F9DC3)
             emBed.add_field(name="clear", value='ลบข้อมูลทั้งหมดภายใน Dictionary')
             emBed.add_field(name="copy", value='คัดลอก Dictionary ทั้งหมดไปยังอันใหม่')
             emBed.add_field(name="fromkeys", value='คืนค่า dictionary ด้วย key หรือ value ที่กำหนด')
