@@ -31,11 +31,11 @@ class list_data(commands.Cog):
 
     # ลองใช้ copy
     @commands.command()
-    async def lcopy(self, ctx, *, par):
+    async def lcopy(self, ctx):
         list = ["A", "B", "C"]
         x = list.copy()
         emBed = discord.Embed(title="ลองใช้ list.copy", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = {0}\nlist.copy(x)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = {0}\nlist.copy(x)\nprint(x)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -65,7 +65,7 @@ class list_data(commands.Cog):
         list = ["A", "B", "C"]
         x = list.pop(int(par))
         emBed = discord.Embed(title="ลองใช้ list.pop", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.pop({0})\nprint(list)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = list.pop({0})\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -73,10 +73,10 @@ class list_data(commands.Cog):
     @commands.command()
     async def lremove(self, ctx, *, par):
         list = ["A", "B", "C"]
-        x = list.remove(str(par))
+        list.remove(par)
         emBed = discord.Embed(title="ลองใช้ list.remove", description="", color=0x6F9DC3)
         emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = list.remove("{0}")\nprint(list)' .format(par))
-        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
+        emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
     # ลองใช้ reverse
