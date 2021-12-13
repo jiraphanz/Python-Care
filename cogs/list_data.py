@@ -120,7 +120,7 @@ class list_data(commands.Cog):
             emBed.add_field(name="append", value='เพิ่มสมาชิกใน List')
             emBed.add_field(name="clear", value='ลบสมาชิกทั้งหมดใน List')
             emBed.add_field(name="copy", value='คืนค่าทั้งหมดใน List')
-            emBed.add_field(name="count", value='ตรวจสอบคำที่เจอว่ามีอยู่กี่ครั้ง')
+            emBed.add_field(name="count", value='ตรวจสอบคำที่เจอว่ามีอยู่กี่คำ')
             emBed.add_field(name="extend", value='ใช้เพิ่มข้อมูลเข้ามายัง List')
             emBed.add_field(name="index", value='ระบุตำแหน่งของข้อมูลแต่ละตัวที่อยู่ใน List')
             emBed.add_field(name="pop", value='ลบข้อมูลในตำแหน่งที่ระบุใน List')
