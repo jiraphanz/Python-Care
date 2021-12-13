@@ -35,7 +35,7 @@ class list_data(commands.Cog):
         list = ["A", "B", "C"]
         x = list.copy()
         emBed = discord.Embed(title="ลองใช้ list.copy", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = {0}\nlist.copy(x)\nprint(x)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = list.copy()\nprint(x)' .format())
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
@@ -150,7 +150,7 @@ class list_data(commands.Cog):
             emBed = discord.Embed(title="list.copy", description="ทำหน้าที่คืนค่าทั้งหมดใน List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='fruits = ["apple", "banana", "cherry"]\nx = fruits.copy()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='["apple", "banana", "cherry"]')
-            emBed.add_field(name="ลองใช้ copy", value='โดยการพิมพ์ !lcopy ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ copy", value='โดยการพิมพ์ !lcopy', inline=False)
             await message.channel.send(embed=emBed)
 
         # List เมธอด count
