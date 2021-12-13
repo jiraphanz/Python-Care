@@ -105,7 +105,7 @@ class list_data(commands.Cog):
         list = ["A", "B", "C"]
         list.count(par)
         emBed = discord.Embed(title="ลองใช้ list.count", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.clear()\nprint(list)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.count()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
 
