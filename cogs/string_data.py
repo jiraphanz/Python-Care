@@ -221,7 +221,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.islower", description="เช็คตัวอักษรทั้งหมดในข้อความว่าเป็นตัวพิมพ์เล็กหรือไม่ถ้าใช่จะ Return ค่าออกมาเป็น True", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "hello world!"\nx = txt.islower()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='True')
-            emBed.add_field(name="ลองใช้ islower", value='โดยการพิมพ์ !islower ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ islower", value='โดยการพิมพ์ !islower ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมธอด capitalize
@@ -240,7 +240,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าว่าจะให้เริ่มนับตั้งเเต่ตำเเหน่งไหนและหยุดนับที่ตำแหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Psit is veryeasy easy" \n x = txt.count("easy", 10, 17)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='1')
-            emBed.add_field(name="ลองใช้ count", value='โดยการพิมพ์ !count ข้อความ, คำที่จะนับ', inline=False)
+            emBed.add_field(name="ลองใช้ count", value='โดยการพิมพ์ !count ข้อความ , คำที่จะนับ', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด center
@@ -355,7 +355,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.rfind("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิมพ์ !rfind คำที่ต้องการหา ข้อความที่ต้องการ', inline=False)
+            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิมพ์ !rfind ข้อความที่ต้องการ , คำที่ต้องการหา', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rjust
@@ -398,7 +398,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถกำหนดว่าจะเอาstringตัวทีจะให้เอาออกกี่ตัว', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple#banana#cherry#orange""\nx = txt.split("#", 1)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="['apple', 'banana#cherry#orange']")
-            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split ข้อความ, คำที่ต้องหารเอาออก', inline=False)
+            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split ข้อความ , คำที่ต้องหารเอาออก', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด swapcase
@@ -422,3 +422,5 @@ class string_data(commands.Cog):
 
 def setup(bot):
     bot.add_cog(string_data(bot))
+
+
