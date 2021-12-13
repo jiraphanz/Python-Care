@@ -237,10 +237,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.count", description="แสดงจำนวนของตัวอักษรที่เราเจอในข้อความตามที่เรากำหนด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Psit is veryhard hard"\nx = txt.count("hard")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='2')
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าว่าจะให้เริ่มนับตั้งเเต่ตำเเหน่งไหนและหยุดนับที่ตำแหน่งไหน', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 2 ตัวว่าจะให้เริ่มนับตั้งเเต่ตำเเหน่งไหนและหยุดนับที่ตำแหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Psit is veryeasy easy" \n x = txt.count("easy", 10, 17)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='1')
-            emBed.add_field(name="ลองใช้ count", value='โดยการพิมพ์ !count ข้อความ , คำที่จะนับ', inline=False)
+            emBed.add_field(name="ลองใช้ count", value='โดยการพิมพ์ !count คำที่จะให้นับ, ข้อความ', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด center
@@ -258,10 +258,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.find", description="หาตำเเหน่งของข้อความที่กำหนดโดยจะเริ่มนับจาก0เเละถ้าหาไม่เจอจะ Return ค่าออกมาเป็น -1 ", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.find("welcome")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=7)
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 2 ตัวเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ find", value='โดยการพิมพ์ !find ข้อความ, คำที่จะหา', inline=False)
+            emBed.add_field(name="ลองใช้ find", value='โดยการพิมพ์ !find คำที่จะหา, ข้อความ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด index
@@ -269,10 +269,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.index", description="บอกตำเเหน่งของข้อความที่กำหนดโดยจะเริ่มนับจาก 0 เเละถ้าหาไม่เจอจะ Error", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.index("e")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=1)
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 2 ตัวเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world." \n x = txt.find("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ index", value='โดยการพิมพ์ !index ข้อความ, ตำเเหน่งที่จะให้เริ่มหา', inline=False)
+            emBed.add_field(name="ลองใช้ index", value='โดยการพิมพ์ !index ตำเเหน่งที่จะให้เริ่มหา, ข้อความ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด isalnum
@@ -312,7 +312,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.ljust", description="จะ Return ข้อความชิดซ้ายเเล้วช่องว่างที่เหลือจะอยู่ด้านขวา", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.ljust(20)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="banana              ")
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพิ่มอีกตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana" \n x = txt.ljust(20, "O"\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="bananaOOOOOOOOOOOOOO")
             await message.channel.send(embed=emBed)
@@ -341,10 +341,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.replace", description="เเทนที่ข้อความเก่าด้วยข้อความใหม่", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "I like bananas"\nx = txt.replace("bananas", "apples")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="I like apples")
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='ถ้ามีคำซ้ำหลายๆคำสามารถกำหนดได้ว่าจะเเทนค่าเเค่กี่คำ', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='ถ้ามีคำซ้ำหลายๆคำสามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อกำหนดได้ว่าจะเเทนค่าเเค่กี่คำ', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "one one was a race horse, two was one too."\nx = txt.replace("one", "five", 2)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="five five was a race horse, two was one too.")
-            emBed.add_field(name="ลองใช้ replace", value='โดยการพิมพ์ !replace ข้อความที่ต้องการให้แทนที่, คำที่จะแทนที่ (ข้อความคือ I love PSIT) ', inline=False)
+            emBed.add_field(name="ลองใช้ replace", value='โดยการพิมพ์ !replace ข้อความที่ต้องการให้แทนที่, คำที่จะเเทนที่(ข้อความคือ I love PSIT) ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rfind
@@ -352,10 +352,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.rfind", description="หาตำเเหน่งจากทางด้านขวาโดยจะเริ่มจาก 0 จะนับตำเเหน่งปกติเเต่จะเอาตำเเหน่งด้านขวาก่อน", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.rfind("e")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=13)
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 2 ตัวเพื่อให้เริ่มหาตำเเหน่งที่ตำเเหน่งไหนเเละหยุดหาที่ตำเเเหน่งไหน', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "Hello, welcome to my world."\nx = txt.rfind("e", 5, 10)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=8)
-            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิมพ์ !rfind ข้อความที่ต้องการ , คำที่ต้องการหา', inline=False)
+            emBed.add_field(name="ลองใช้ rfind", value='โดยการพิมพ์ !rfind คำที่ต้องการหา , ข้อความที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rjust
@@ -363,7 +363,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.rjust", description="Return ค่าออกมาในรูปเเบบที่ข้อความชิดขวาเเล้วช่องว่างอยู่ซ้าย", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="              banana")
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่าเพิ่มอีกตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อเปลี่ยนจากช่องว่างเป็น String', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "banana"\nx = txt.rjust(20, "O")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="OOOOOOOOOOOOOObanana")
             await message.channel.send(embed=emBed)
@@ -395,10 +395,10 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.split", description="นำข้อความที่ไม่ต้องการออกเเละเเปลงข้อความที่เหลือให้อยู่ในรูปเเบบของ List", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple#banana#cherry#orange""\nx = txt.split("#")\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="['apple', 'banana', 'cherry', 'orange']")
-            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถกำหนดว่าจะเอาstringตัวทีจะให้เอาออกกี่ตัว', inline=False)
+            emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อกำหนดว่าจะเอาstringตัวทีจะให้เอาออกกี่ตัว', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple#banana#cherry#orange""\nx = txt.split("#", 1)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="['apple', 'banana#cherry#orange']")
-            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split ข้อความ , คำที่ต้องหารเอาออก', inline=False)
+            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split คำที่ต้องการเอาออก , ข้อความ', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด swapcase
