@@ -221,7 +221,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.islower", description="เช็คตัวอักษรทั้งหมดในข้อความว่าเป็นตัวพิมพ์เล็กหรือไม่ถ้าใช่จะ Return ค่าออกมาเป็น True", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "hello world!"\nx = txt.islower()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value='True')
-            emBed.add_field(name="ลองใช้ islower", value='โดยการพิมพ์ !islower ข้อความที่ต้องการเปลี่ยน', inline=False)
+            emBed.add_field(name="ลองใช้ islower", value='โดยการพิมพ์ !islower ข้อความที่ต้องการเช็ค', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมธอด capitalize
@@ -422,3 +422,5 @@ class string_data(commands.Cog):
 
 def setup(bot):
     bot.add_cog(string_data(bot))
+
+
