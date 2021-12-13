@@ -73,9 +73,9 @@ class list_data(commands.Cog):
     @commands.command()
     async def lremove(self, ctx, *, par):
         list = ["A", "B", "C"]
-        x = list.remove(par)
+        x = list.remove(str(par))
         emBed = discord.Embed(title="ลองใช้ list.remove", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = []\nx = list.remove({0})\nprint(list)' .format(par))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nx = list.remove("{0}")\nprint(list)' .format(par))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(x))
         await ctx.channel.send(embed=emBed)
 
