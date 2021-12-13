@@ -92,10 +92,10 @@ class list_data(commands.Cog):
     # ลองใช้ sort
     @commands.command()
     async def lsort(self, ctx):
-        list = ["A", "B", "C"]
+        list = [3, 2, 1]
         list.sort()
         emBed = discord.Embed(title="ลองใช้ list.sort", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='list = ["A", "B", "C"]\nlist.sort()\nprint(list)')
+        emBed.add_field(name="ตัวอย่างโค้ด", value='list = [3, 2, 1]\nlist.sort()\nprint(list)')
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(list))
         await ctx.channel.send(embed=emBed)
     
