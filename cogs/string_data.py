@@ -414,7 +414,7 @@ class string_data(commands.Cog):
             emBed = discord.Embed(title="string.upper", description="เปลี่ยนข้อความให้เป็นตัวใหญ่ทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple"\nx = txt.upper()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="APPLE")
-            emBed.add_field(name="ลองใช้ upper", value='โดยการพิมพ์ !upper ข้อความที่ต้องการเปลี่ยนนนนน', inline=False)
+            emBed.add_field(name="ลองใช้ upper", value='โดยการพิมพ์ !upper ข้อความที่ต้องการเปลี่ยน', inline=False)
             await message.channel.send(embed=emBed)
 
 
