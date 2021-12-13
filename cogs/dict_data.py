@@ -104,7 +104,7 @@ class dict_data(commands.Cog):
         dict = {"brand": "Ford", "model": "Mustang", "year": "1964"}
         dict.update({par: par2})
         emBed = discord.Embed(title="ลองใช้ dict.update", description="", color=0x6F9DC3)
-        emBed.add_field(name="ตัวอย่างโค้ด", value='dict.update({"{0}", "{1}"})\nprint(dict)' .format(par, par2))
+        emBed.add_field(name="ตัวอย่างโค้ด", value='dict.update("{0}", "{1}")\nprint(dict)' .format(par, par2))
         emBed.add_field(name="ผลลัพธ์", value='{0}' .format(dict))
         await ctx.channel.send(embed=emBed)
 
