@@ -344,7 +344,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='ถ้ามีคำซ้ำหลายๆคำสามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อกำหนดได้ว่าจะเเทนค่าเเค่กี่คำ', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "one one was a race horse, two was one too."\nx = txt.replace("one", "five", 2)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="five five was a race horse, two was one too.")
-            emBed.add_field(name="ลองใช้ replace", value='โดยการพิมพ์ !replace ข้อความที่ต้องการให้แทนที่, คำที่จะเเทนที่(ข้อความคือ I love PSIT) ', inline=False)
+            emBed.add_field(name="ลองใช้ replace", value='โดยการพิมพ์ !replace คำในประโยคที่ต้องการแทนที่, คำที่จะเเทนที่(ข้อความคือ I love PSIT) ', inline=False)
             await message.channel.send(embed=emBed)
         
         # String เมทธอด rfind
