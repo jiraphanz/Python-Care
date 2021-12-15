@@ -398,7 +398,7 @@ class string_data(commands.Cog):
             emBed.add_field(name="ตัวอย่างเพิ่มเติม", value='สามารถใส่ค่า Parameter เพิ่มอีก 1 ตัวเพื่อกำหนดว่าจะเอาstringตัวทีจะให้เอาออกกี่ตัว', inline=False)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "apple#banana#cherry#orange""\nx = txt.split("#", 1)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value="['apple', 'banana#cherry#orange']")
-            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split คำที่ต้องการเอาออก , ข้อความ', inline=False)
+            emBed.add_field(name="ลองใช้ split", value='โดยการพิมพ์ !split ข้อความ , คำที่ต้องการเอาออก', inline=False)
             await message.channel.send(embed=emBed)
 
         # String เมทธอด swapcase
