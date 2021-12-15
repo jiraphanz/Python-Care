@@ -301,7 +301,7 @@ class string_data(commands.Cog):
         
         # String เมทธอด isupper
         elif message.content == "!string isupper":
-            emBed = discord.Embed(title="string.isupper", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวเลขใหญ่ทั้งหมด", color=0x6F9DC3)
+            emBed = discord.Embed(title="string.isupper", description="จะ Return ค่าเป็น True เมื่อข้อความเป็นตัวอักษรใหญ่ทั้งหมด", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "CENTER"\nx = txt.isupper()\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=True)
             emBed.add_field(name="ลองใช้ isupper", value='โดยการพิมพ์ !isupper ข้อความที่ต้องการเช็ค', inline=False)
