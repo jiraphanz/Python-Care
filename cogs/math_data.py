@@ -214,7 +214,7 @@ class math_data(commands.Cog):
             emBed = discord.Embed(title="math.pow", description="ต้องใส่ Parameter สองตัว โดยตัวเเเรกจะเป็นฐานเเละตัวที่สองเป็นเลขยกกำลัง", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='x = math.pow(2, 2)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=4)
-            emBed.add_field(name="ลองใช้ pow", value='โดยการพิมพ์ !pow ตัวเลขที่ต้องการ, ตัวเลขที่อยากให้ยกกำลัง', inline=False)
+            emBed.add_field(name="ลองใช้ pow", value='โดยการพิมพ์ !pow ตัวเลขที่ต้องการ, เลขยกกำลัง', inline=False)
             await message.channel.send(embed=emBed)
         # Math.degrees
         elif message.content == "!math degrees":
