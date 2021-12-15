@@ -168,21 +168,21 @@ class math_data(commands.Cog):
         elif message.content == "!math sin":
             emBed = discord.Embed(title="math.sin", description="เปลี่ยนค่าตัวเลขเป็นค่า Sin", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "30"\nx = math.sin(txt)\nprint(x)')
-            emBed.add_field(name="ผลลัพธ์", value="1/2")
+            emBed.add_field(name="ผลลัพธ์", value="-0.9880316240928618")
             emBed.add_field(name="ลองใช้ sin", value='โดยการพิมพ์ !sin ตัวเลขที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         # Math.cos
         elif message.content == "!math cos":
             emBed = discord.Embed(title="math.cos", description="เปลี่ยนค่าตัวเลขเป็นค่า Cos", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "60"\nx = math.cos(txt)\nprint(x)')
-            emBed.add_field(name="ผลลัพธ์", value="1/2")
+            emBed.add_field(name="ผลลัพธ์", value="-0.9524129804151563")
             emBed.add_field(name="ลองใช้ cos", value='โดยการพิมพ์ !cos ตัวเลขที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         # Math.tan
         elif message.content == "!math tan":
             emBed = discord.Embed(title="math.tan", description="เปลี่ยนค่าตัวเลขเป็นค่า Tan", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "45"\nx = math.sin(txt)\nprint(x)')
-            emBed.add_field(name="ผลลัพธ์", value="1")
+            emBed.add_field(name="ผลลัพธ์", value="1.6197751905438615")
             emBed.add_field(name="ลองใช้ tan", value='โดยการพิมพ์ !tan ตัวเลขที่ต้องการ', inline=False)
             await message.channel.send(embed=emBed)
         # Math.radians
