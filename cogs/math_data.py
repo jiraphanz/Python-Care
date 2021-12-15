@@ -218,7 +218,7 @@ class math_data(commands.Cog):
             await message.channel.send(embed=emBed)
         # Math.degrees
         elif message.content == "!math degrees":
-            emBed = discord.Embed(title="math.radians", description="เปลี่ยนค่า Radians เป็น Degree", color=0x6F9DC3)
+            emBed = discord.Embed(title="math.degrees", description="เปลี่ยนค่า Radians เป็น Degree", color=0x6F9DC3)
             emBed.add_field(name="ตัวอย่างโค้ด", value='txt = "1"\nx = math.raidans(txt)\nprint(x)')
             emBed.add_field(name="ผลลัพธ์", value=57.29577951308232)
             emBed.add_field(name="ลองใช้ degrees", value='โดยการพิมพ์ !degrees ตัวเลขที่ต้องการ', inline=False)
